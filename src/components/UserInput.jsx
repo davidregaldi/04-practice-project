@@ -8,10 +8,11 @@ export default function UserInput() {
     expectedReturn: 6,
     duration: 10,
   });
+
   function handleChange(inputIdentifier, newValue) {
-    setUserInput(prevUserIput => {
+    setUserInput(prevUserInput => {
       return {
-        ...prevUserIput,
+        ...prevUserInput,
         [inputIdentifier]: newValue
       }
     })
